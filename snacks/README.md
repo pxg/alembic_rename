@@ -1,4 +1,3 @@
-
 Install the snacks package in editable mode:
 ```
 pip install -e .
@@ -12,9 +11,13 @@ pip install -r requirements.txt
 
 Create your role and database:
 ```
+psql
 CREATE USER snacks;
 CREATE DATABASE snacks WITH OWNER snacks ENCODING 'UTF8';
 ```
 
-To create the schema run:
-python models.py
+Run the migrations to create the schama:
+```
+cd snacks
+alembic -c alembic.ini upgrade head
+```
