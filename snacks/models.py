@@ -10,8 +10,8 @@ class Marathon(Base):
     __tablename__ = 'marathon'
     id = Column(Integer, primary_key=True)
     weight = Column(Integer, nullable=False)
-    bought = Column(DateTime(timezone=True))
-    eaten = Column(DateTime(timezone=True))
+    bought = Column(DateTime(timezone=True), nullable=False)
+    eaten = Column(DateTime(timezone=True), nullable=False)
 
 
-Base.metadata.create_all(engine)
+#Base.metadata.create_all(engine)
