@@ -1,3 +1,8 @@
+#Alembic and Postgres table renaming experiment
+
+This project was written using Python 3.4.3 and psql 9.4.4.
+
+##Installation
 Install the snacks package in editable mode:
 ```
 pip install -e .
